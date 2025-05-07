@@ -1,0 +1,98 @@
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.admin-dashboard h1, .admin-dashboard h2 {
+    text-align: center;
+    color: #333;
+}
+
+.admin-dashboard form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.admin-dashboard input[type="text"], .admin-dashboard input[type="date"], .admin-dashboard textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.admin-dashboard textarea {
+    height: 100px;
+}
+
+.admin-dashboard button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.admin-dashboard button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.admin-dashboard button {
+    background-color: #ff4747;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.admin-dashboard button:hover {
+    background-color: #e03e3e;
+}
+
+.admin-dashboard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-dashboard ul li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard ul li button {
+    background-color: #28a745;
+}
+
+.admin-dashboard ul li button:hover {
+    background-color: #218838;
+}
+
+/* Styling for the form input and button while editing */
+.admin-dashboard form input[type="text"]:focus, .admin-dashboard form textarea:focus, .admin-dashboard form input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.admin-dashboard form button[type="submit"]:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}

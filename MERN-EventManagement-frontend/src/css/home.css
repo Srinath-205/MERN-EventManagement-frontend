@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.home-container {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/public/22471.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid red; */
+}
+
+.center-container {
+    margin-top: 20vh;
+    margin-left: 50vh;
+    margin-right: 50vh;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+    background-image: url('../../public/rb_18900.png');
+    background-size: cover;
+    background-position: center;
+    gap: 2rem;
+}
+
+.left-container {
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+}
+
+.right-container img {
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 1200px) {
+    .home-container {
+        height: 100vh;
+    }
+    .center-container {
+        flex-direction: column;
+        margin: 15vh auto;
+        padding: 4%;
+    }
+    .right-container img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .center-container {
+        margin-top: 20%;
+        
+        padding: 3%;
+    }
+    .right-container img {
+        max-width: 200px;
+      
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .center-container {
+        padding: 2%;
+    }
+    .right-container img {
+        max-width: 150px;
+    }
+}
